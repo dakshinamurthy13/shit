@@ -1,0 +1,8 @@
+services:
+  serverapp:
+    build: ./shopping-list-api
+    image: shopping-list-api
+    container_name: shopping-list-api
+    ports:
+      - "5000:5000"
+    env_file: ./shopping-list-api/.env
