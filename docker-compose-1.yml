@@ -3,7 +3,5 @@ services:
     build: ./shopping-list-react
     image: shopping-list-react
     container_name: shopping-list-react
-    depends_on:
-      - serverapp
     ports:
       - "3000:3000"
